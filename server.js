@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(express.static(__dirname));
 
-mongoose.connect('mongodb://sashikodi:omsai28@ds151927.mlab.com:51927/whitebox');
+mongoose.connect('mongodb://sashikodi:omsai28@ds151927.mlab.com:51927/sandbox');
 var db= mongoose.connection;
 db.on('error', function(){
    console.log('Error trying to connect to Mongo DB databased'); 
